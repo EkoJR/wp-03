@@ -1,0 +1,290 @@
+/*
+Theme Name: ColorMag Child
+Theme URI: https://github.com/EkoJr
+Author: EkoJR
+Author URI: http://ekojr.com
+Description: Child Theme for ColorMag.
+Version: 0.1
+License: GNU General Public License, version 3 (GPLv3)
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+Tags: one-column, two-columns, right-sidebar, left-sidebar, flexible-header, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images, theme-options, post-formats, footer-widgets, blog, e-commerce, news, rtl-language-support
+Text Domain: colormag-child
+Template: colormag
+*/
+
+/*******************************************************************************
+ * PARENT OVERWRITES ***********************************************************
+ ******************************************************************************/
+.widget_slider_area {
+    float: left;
+    width: 59%;
+	margin-right: 1%;
+}
+.widget_beside_slider {
+    float: right;
+    width: 39%;
+	margin-left: 1%;
+}
+ #header-left-section {
+	float: left;
+	width: 32%;
+}
+
+#header-right-section {
+	float:right;
+	width: 64%;
+}
+@media screen and (max-width:768px) {
+	#header-left-section {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#header-right-section {
+		float: none;
+		width: 100%;
+	}
+}
+@media screen and (max-width:768px) {
+	.widget_slider_area,
+	.widget_beside_slider {
+		float: none;
+		width: 100%;
+	}
+}
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px; height: 0; overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*******************************************************************************
+ * RESPONSIVE GRID *************************************************************
+ ******************************************************************************/
+/* 
+ * Responsive Rows
+ */
+.respon_row {
+	clear: both;
+	overflow: hidden;
+	/* height: 100%; */
+}
+/* 
+ * Responsive Columns
+*/
+.respon_col {
+	display: block;
+	float: left;
+	margin: 0% 0% 1% 2%;
+}
+.respon_col-center {
+	display: block;
+
+	float: none;
+	margin: 0% 0% 1% 2%;
+}
+.respon_col-right {
+	display: block;
+	/* display: table;*/
+	/* width: 48%; */
+	float: right;
+	margin: 0% 0% 1% 2%;
+}
+
+.respon_col:first-child {
+	margin-left: 0;
+}
+.respon_col-center:first-child {
+	margin-left: 0;
+}
+/*
+@media only screen and (max-width: 480px){
+	.respon_col, .respon_col-center, .respon_col-right {
+		margin: 0% 0% 1% 0%;
+	}
+}
+*/
+/*
+ * Responsive Groups
+ */
+.respon_group:before,
+.respon_group:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.respon_group {
+	/* For IE 6/7 */
+	zoom:1;
+}
+
+/*
+ * GRID OF TWO
+ */
+
+.span_2_of_2 { width: 100%; }
+.span_1_of_2 { width: 49%; }
+
+/* @media only screen and (max-width: 480px){
+	.span_1_of_2, .span_2_of_2 {
+		width: 100%;
+	}
+} */
+
+@media only screen and (max-width: 768px) {
+    .respon_col {
+        margin:0% 1% 1% 0%;
+    }
+
+    .span_1_of_2,.span_2_of_2 {
+        width: 100%;
+    }
+}
+
+/*
+ * GRID OF THREE
+ */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66%; }
+.span_1_of_3 { width: 32%; }
+
+/*  GO FULL WIDTH BELOW 700 PIXELS */
+@media only screen and (max-width: 700px) {
+	.respon_col {  margin: 1% 1% 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+/* 
+ * GRID OF FIVE 
+ */
+.span_5_of_5 { width: 100%; }
+.span_4_of_5 { width: 79.9%; }
+.span_3_of_5 { width: 59%; }
+.span_2_of_5 { width: 39%; }
+.span_1_of_5 { width: 19.6%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 600px) {
+	.respon_col {  margin: 0% 1% 1% 0%; }
+	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
+}
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+
+.front_page-content_top_section-left_01-01 {
+
+}
+
+.front_page-content_top_section-left_01-01 > h1 > a {
+	background-color: #fa5f00;
+}
+.front_page-content_top_section-right_01-01 > h1 > a {
+	background-color: #336699;
+}
+.front_page-content_top_section-left_02-01 > h1 > a {
+	background-color: #996633;
+}
+.front_page-content_top_section-right_02-01 > h1 > a {
+	background-color: #339966;
+}
+
+/*************************************************************************/
+
+.top_section-01-list_header {
+	/* color: #ffffff; */
+	font-size: 18px; 
+	padding: 0%; 
+	margin-bottom: 1px; 
+	width: 100%;
+}
+.top_section-01-list_header > a { 
+	color: #ffffff; 
+	display: inline-block; 
+	padding: 2%; 
+	width: 96%
+}
+.top_section-01-item {
+	position: relative;
+}
+.top_section-01-item  > div {
+	position: absolute; 
+	z-index: 1; 
+	bottom: 9%; 
+	left: 3%; 
+	width: 88%; 
+	padding: 0% 3%;
+}
+.top_section-01-item > div > h2 {
+	padding-bottom: 3px; 
+	line-height: 0.8;
+}
+.top_section-01-item > div > h2  > a {
+	color: #ffffff;
+}
+.top_section-01-item  > a > img {
+	margin-bottom: 1%; 
+	object-fit: cover; 
+	object-position: center; 
+	width: 100%; 
+	height: 230px;
+}
+
+/*************************************************************************/
+
+.front_page-content_top_section-left_01-02 {}
+.front_page-content_top_section-right_01-02 {}
+.front_page-content_top_section-left_02-02 {}
+.front_page-content_top_section-right_02-02 {}
+.front_page-content_top_section-all-02 {
+	position: relative;
+}
+
+
+.top_section-02-item_thumb {
+	clear: both; 
+	float: left; 
+	height: 92px; 
+	width: 92px;
+}
+.top_section-02-item_title {
+	float: left; 
+	margin: 0% 0% 3% 3%; 
+	line-height: 1.1; 
+	max-width: 55%;
+	min-height: 32px;
+}
+.top_section-02-item_date {
+	color: #999999; 
+	float: left;
+ 	width: 55%;
+	font-size: x-small; 
+	margin: 0% 0% 0% 3%;
+}
+
+/*************************************************************************/
+
+.front_page-content_top_section-left_01-03 {}
+.front_page-content_top_section-right_01-03 {}
+.front_page-content_top_section-left_02-03 {}
+.front_page-content_top_section-right_02-03 {}
+.front_page-content_top_section-all-03 {
+	position: relative;
+}
+
+.front_page-content_top_section-all-03 > hr {
+	margin: 2% 0;
+}
+.front_page-content_top_section-all-03 > p {
+	font-size: 92%; 
+	line-height: 1.2; 
+	margin-bottom: 0%;
+}
